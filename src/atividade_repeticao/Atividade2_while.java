@@ -3,14 +3,12 @@ package atividade_repeticao;
 import java.util.Scanner;
 
 public class Atividade2_while {
-
 	public static void main(String[] args) {
 		int idade, pssd, idg;
 		String continua = "s";
 		double media, somaIdade = 0;
 		Scanner leia = new Scanner(System.in);
 		int totdesenvolvedorbkd = 0, totmcistrans = 0, tothcismobile = 0, totbinariafll = 0, totalp = 0;
-
 		while (!continua.equalsIgnoreCase("n")) {
 			System.out.println("______________________________________________________");
 			System.out.println("| IDENTIDADE DE GÊNERO    | PESSOAS DESENVOLVEDORAS  |");
@@ -22,51 +20,26 @@ public class Atividade2_while {
 			System.out.println("| 5- Homem Trans          |                          |");
 			System.out.println("| 6- Outros               |                          |");
 			System.out.println("|_________________________|__________________________|");
-
 			System.out.println("\nIdade:                     ");
 			idade = leia.nextInt();
-			
-			
 			System.out.println("\nIdentidade de Gênero:      ");
 			idg = leia.nextInt();
-			
-			
 			System.out.println("\nPessoa Desenvolvedora:     ");
 			pssd = leia.nextInt();
-			
-			
 			System.out.println("____________________________ ");
 			totalp++;
-
 			somaIdade = somaIdade + idade;
-
 			if (pssd == 1) {
 				totdesenvolvedorbkd++;
-
-			}
-			
-			else if (idg == 1 || idg == 4 && pssd == 1) {
+			} else if (idg == 1 || idg == 4 && pssd == 1) {
 				totmcistrans = totmcistrans + 1;
-			} 
-			
-			
-			else if (idg == 2 || idg == 5 && pssd == 4 && idade > 40) {
+			} else if (idg == 2 || idg == 5 && pssd == 4 && idade > 40) {
 				tothcismobile = tothcismobile + 1;
-			} 
-			
-			
-			
-			
-			else if (idg == 3 && pssd == 4 && idade < 30) {
+			} else if (idg == 3 && pssd == 4 && idade < 30) {
 				totbinariafll++;
 			}
-			
-			
-			
-
 			System.out.println("Deseja continuar? S para SIM ou N para NÃO ");
 			continua = leia.next();
-
 		}
 
 		if (totalp > 0) {
