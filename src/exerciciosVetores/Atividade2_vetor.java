@@ -27,12 +27,13 @@ public class Atividade2_vetor {
 		System.out.println("Elementos pares: ");
 		for (cont = 0; cont < 10; cont++) {
 			if (numeros[cont] % 2 == 0) {
-				System.out.println( numeros[cont]);
+				System.out.println(numeros[cont]);
 
 			}
 		}
-
+		media = (float) result / 10;
 		System.out.println("Soma: " + result);
+		System.out.printf("A média é: %.2f",  media);
 
 		leia.close();
 	}
