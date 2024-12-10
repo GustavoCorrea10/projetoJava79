@@ -1,17 +1,13 @@
 package atividadeFilaPilha;
-
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
-
 public class AtividadeFila {
-
 	public static void main(String[] args) {
 
 		Queue<String> fila = new LinkedList<String>();
 		Integer valor;
 		Scanner leia = new Scanner(System.in);
-
 		do {
 			System.out.println("_______________________________");
 			System.out.println(" 1 - Adicionar Clientes na Fila");
@@ -20,10 +16,8 @@ public class AtividadeFila {
 			System.out.println(" 0 - Sair                      ");
 			System.out.println("_______________________________");
 			System.out.println("Entre com a opção desejada:    ");
-
 			valor = leia.nextInt();
 			leia.nextLine();
-
 			switch (valor) {
 			case 1:
 				System.out.println("Digite o nome do cliente: ");
